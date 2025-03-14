@@ -98,8 +98,8 @@ degree_items.sort(key=get_degree, reverse=True)
 # Print the first 10 nodes after sorting
 count = 1
 for item in degree_items[:10]:
-    node = item[0]    # Node id
-    degree = item[1]  # Corresponding degree
+    node = item[0] # Node id
+    degree = item[1] # Corresponding degree
     # Get the name of the airport/city that corresponds to this node from the cities dictionary
     print(str(count) + ". " + str(cities.get(node, node)) + " -- " + str(degree) + " connections")
     count = count + 1
@@ -116,7 +116,7 @@ for n, d in G_largest.degree():
 
 # Eliminate duplicates and sort
 unique_degrees = list(set(degrees))
-unique_degrees.sort()  # 排序唯一度数
+unique_degrees.sort()
 
 # Calculate the number of occurrences corresponding to each unique degree
 counts = []
