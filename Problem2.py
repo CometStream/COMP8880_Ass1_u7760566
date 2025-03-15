@@ -137,6 +137,7 @@ plt.xlabel("Degree (x)")
 plt.ylabel("Fraction of nodes (y)")
 plt.title("Degree Distribution (Linear Scale)")
 plt.xlim(min(unique_degrees), max(unique_degrees))
+plt.savefig("degree_distribution_linear.png", dpi=300)
 plt.show()
 
 # Plotting the degree distribution on a log-log scale
@@ -146,6 +147,7 @@ plt.xlabel("Degree (log10)")
 plt.ylabel("Fraction of nodes (log10)")
 plt.title("Degree Distribution (Log-Log Scale)")
 plt.xlim(min(unique_degrees), max(unique_degrees))
+plt.savefig("degree_distribution_loglog.png", dpi=300)
 plt.show()
 
 
