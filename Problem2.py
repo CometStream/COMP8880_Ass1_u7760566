@@ -201,8 +201,8 @@ for node in cities:
 if start_node is None or end_node is None:
     print("Cannot find the nodes for Canberra and/or Cape Town in the dataset.")
 else:
-    print("Canberra:", cities.get(start_node))
-    print("Cape Town:", cities.get(end_node))
+    # print("Canberra:", cities.get(start_node))
+    # print("Cape Town:", cities.get(end_node))
     try:
         # Find the shortest path from Canberra to Cape Town using the functions included in the networkx library.
         shortest_route = nx.shortest_path(G_largest, source=start_node, target=end_node)
@@ -235,5 +235,5 @@ for item in bc_items[:10]:
     node = item[0] # Node id
     centrality = item[1] # Corresponding centrality
     # Print the name of the airport/city and the centrality of the node
-    print(str(count) + ". " + str(cities.get(node, node)) + " -- Betweenness centrality: " + str(round(centrality, 3)))
+    print(str(count) + ". " + str(cities.get(node, node)) + ": " + str(round(centrality, 3)))
     count = count + 1
